@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Sinatro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        
+        :root {
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-color: #fcfcfc;
+            --accent: #222222;
+            --line-color: #eeeeee;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-main);
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            background-color: var(--bg-color);
+            width: 100%;
+            max-width: 750px;
+            padding: 60px 70px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #eaeaea;
+        }
+
+        header {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        h1 {
+            color: var(--accent);
+            margin: 0 0 5px 0;
+            font-size: 2.2em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: var(--text-light);
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info span {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 1em;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            border-bottom: 1px solid var(--line-color);
+            padding-bottom: 8px;
+        }
+
+        .section-content {
+            margin-bottom: 30px;
+        }
+
+        .objective {
+            font-size: 0.95em;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .item-block {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: 500;
+            font-size: 1em;
+            color: var(--accent);
+        }
+
+        .item-meta {
+            font-size: 0.9em;
+            color: var(--text-light);
+        }
+        
+        .item-company {
+             font-size: 0.95em;
+             font-style: italic;
+             color: var(--text-light);
+             margin-bottom: 8px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 0.95em;
+            color: var(--text-main);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .skills-list li {
+            font-size: 0.9em;
+            color: var(--text-main);
+        }
+        
+        .skills-list li::after {
+            content: "•";
+            margin-left: 10px;
+            color: var(--line-color);
+        }
+        
+        .skills-list li:last-child::after {
+            content: "";
+        }
+
+        @media print {
+            body {
+                background-color: var(--bg-color);
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                border: none;
+                padding: 40px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Sinatro</h1>
+            <div class="contact-info">
+                <span>Piedade / Ibiúna - SP</span>
+                <span>(11) 99649-5465</span>
+                <span>Sinatro@msn.com</span>
+            </div>
+        </header>
+
+        <section class="section-content">
+            <h2>Objetivo</h2>
+            <p class="objective">
+                Atuar na Comercial Jimenez, contribuindo com minha experiência administrativa, conhecimento técnico em construção civil e facilidade com tecnologia. Tenho disponibilidade para atuar nas áreas administrativas, vendas, atendimento, estoque ou TI.
+            </p>
+        </section>
+
+        <section class="section-content">
+            <h2>Formação Acadêmica</h2>
+            <div class="item-block">
+                <div class="item-header">
+                    <div class="item-title">Graduação em Engenharia Civil</div>
+                    <div class="item-meta">Conclusão: Julho/2020</div>
+                </div>
+                <div class="item-company">FMU - Faculdades Metropolitanas Unidas</div>
+            </div>
+            <div class="item-block">
+                <div class="item-header">
+                    <div class="item-title">Graduação em Administração de Empresas</div>
+                    <div class="item-meta">Conclusão: Dezembro/2012</div>
+                </div>
+                <div class="item-company">FMU - Faculdades Metropolitanas Unidas</div>
+            </div>
+        </section>
+
+        <section class="section-content">
+            <h2>Experiência Profissional</h2>
+            
+            <div class="item-block">
+                <div class="item-header">
+                    <div class="item-title">Prestador de Serviços</div>
+                    <div class="item-meta">2019 - 2025</div>
+                </div>
+                <div class="item-company">Lado B Engenharia / JBMIX Engenharia</div>
+                <ul>
+                    <li>Gerenciamento e acompanhamento de obras.</li>
+                    <li>Elaboração de orçamentos.</li>
+                    <li>Desenvolvimento de projetos civis e elétricos.</li>
+                    <li>Levantamento quantitativo de materiais.</li>
+                    <li>Planejamento e acompanhamento de serviços.</li>
+                    <li>Apoio técnico em instalações elétricas e construção civil.</li>
+                    <li>Relacionamento com clientes e fornecedores.</li>
+                    <li>Suporte técnico e administrativo.</li>
+                </ul>
+            </div>
+
+            <div class="item-block">
+                <div class="item-header">
+                    <div class="item-title">Sócio Administrador</div>
+                </div>
+                <div class="item-company">STUDIO FBMJS LTDA</div>
+                <ul>
+                    <li>Administração geral do negócio.</li>
+                    <li>Atendimento ao público.</li>
+                    <li>Controle financeiro e administrativo.</li>
+                    <li>Organização de documentos e processos.</li>
+                    <li>Planejamento operacional.</li>
+                    <li>Gestão de equipes, distribuição de tarefas e avaliação de performance.</li>
+                    <li>Desenvolvimento e implementação de estratégias para cumprimento de metas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-content">
+            <h2>Qualificações e Competências</h2>
+            <ul>
+                <li>Amplo conhecimento técnico em construção civil, materiais, instalações elétricas e hidráulicas.</li>
+                <li>Leitura e interpretação de projetos civis e elétricos.</li>
+                <li>Planejamento, orçamentação e acompanhamento de obras.</li>
+                <li>Atendimento técnico, orientação ao cliente e resolução de problemas.</li>
+                <li>Administração, organização de processos e controle de estoque.</li>
+                <li>Elaboração de planilhas e relatórios.</li>
+                <li>Trabalho em equipe, organização, comprometimento e facilidade de aprendizagem.</li>
+            </ul>
+        </section>
+
+        <section class="section-content">
+            <h2>Informática</h2>
+            <ul class="skills-list">
+                <li>Microsoft Excel</li>
+                <li>Microsoft Word</li>
+                <li>LibreOffice</li>
+                <li>AutoCAD</li>
+                <li>Revit</li>
+                <li>Adobe Photoshop</li>
+                <li>CorelDRAW</li>
+                <li>Visual Studio Code</li>
+                <li>HTML</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section class="section-content">
+            <h2>Informações Complementares</h2>
+            <ul>
+                <li>CREA ativo.</li>
+                <li>CNH categoria B.</li>
+                <li>Disponibilidade para atuar em diferentes setores da empresa.</li>
+                <li>Facilidade com tecnologia e sistemas informatizados.</li>
+                <li>Conhecimento técnico que auxilia na orientação de clientes quanto à escolha e utilização de materiais para construção civil.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>"""
+
+with open('/mnt/data/Curriculo_Sinatro_Jimenez_Minimalista-v2.html', 'w', encoding='utf-8') as f:
+    f.write(html_web_content)
+
+
+pdf_html_content = """<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo - Sinatro</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 25mm;
+            background-color: #ffffff;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333333;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-size: 10.5pt;
+            line-height: 1.5;
+        }
+        header {
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: #222222;
+            margin: 0 0 4px 0;
+            font-size: 20pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .contact-info {
+            font-size: 9pt;
+            color: #666666;
+            margin-bottom: 4px;
+        }
+        h2 {
+            color: #222222;
+            font-size: 11pt;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 4px;
+            page-break-after: avoid;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        .item-block {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .item-header {
+            width: 100%;
+            display: table;
+        }
+        .item-title {
+            display: table-cell;
+            font-weight: bold;
+            font-size: 10.5pt;
+        }
+        .item-meta {
+            display: table-cell;
+            text-align: right;
+            font-size: 9pt;
+            color: #666666;
+        }
+        .item-company {
+            font-style: italic;
+            color: #555555;
+            margin-top: 2px;
+            margin-bottom: 4px;
+            font-size: 10pt;
+        }
+        ul {
+            margin: 0;
+            padding-left: 15px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        .inline-list {
+            line-height: 1.6;
+        }
+        .inline-list span::after {
+            content: " • ";
+            color: #aaaaaa;
+        }
+        .inline-list span:last-child::after {
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sinatro</h1>
+        <div class="contact-info">
+            Piedade / Ibiúna - SP &nbsp;|&nbsp; (11) 99649-5465 &nbsp;|&nbsp; Sinatro@msn.com
+        </div>
+    </header>
+
+    <h2>Objetivo</h2>
+    <p>
+        Atuar na Comercial Jimenez, contribuindo com minha experiência administrativa, conhecimento técnico em construção civil e facilidade com tecnologia. Tenho disponibilidade para atuar nas áreas administrativas, vendas, atendimento, estoque ou TI.
+    </p>
+
+    <h2>Formação Acadêmica</h2>
+    <div class="item-block">
+        <div class="item-header">
+            <div class="item-title">Graduação em Engenharia Civil</div>
+            <div class="item-meta">Conclusão: Julho/2020</div>
+        </div>
+        <div class="item-company">FMU - Faculdades Metropolitanas Unidas</div>
+    </div>
+    <div class="item-block">
+        <div class="item-header">
+            <div class="item-title">Graduação em Administração de Empresas</div>
+            <div class="item-meta">Conclusão: Dezembro/2012</div>
+        </div>
+        <div class="item-company">FMU - Faculdades Metropolitanas Unidas</div>
+    </div>
+
+    <h2>Experiência Profissional</h2>
+    <div class="item-block">
+        <div class="item-header">
+            <div class="item-title">Prestador de Serviços</div>
+            <div class="item-meta">2019 - 2025</div>
+        </div>
+        <div class="item-company">Lado B Engenharia / JBMIX Engenharia</div>
+        <ul>
+            <li>Gerenciamento e acompanhamento de obras.</li>
+            <li>Elaboração de orçamentos.</li>
+            <li>Desenvolvimento de projetos civis e elétricos.</li>
+            <li>Levantamento quantitativo de materiais.</li>
+            <li>Planejamento e acompanhamento de serviços.</li>
+            <li>Apoio técnico em instalações elétricas e construção civil.</li>
+            <li>Relacionamento com clientes e fornecedores.</li>
+            <li>Suporte técnico e administrativo.</li>
+        </ul>
+    </div>
+
+    <div class="item-block">
+        <div class="item-header">
+            <div class="item-title">Sócio Administrador</div>
+            <div class="item-meta"></div>
+        </div>
+        <div class="item-company">STUDIO FBMJS LTDA</div>
+        <ul>
+            <li>Administração geral do negócio.</li>
+            <li>Atendimento ao público.</li>
+            <li>Controle financeiro e administrativo.</li>
+            <li>Organização de documentos e processos.</li>
+            <li>Planejamento operacional.</li>
+            <li>Gestão de equipes, distribuição de tarefas e avaliação de performance.</li>
+            <li>Desenvolvimento e implementação de estratégias para cumprimento de metas.</li>
+        </ul>
+    </div>
+
+    <h2>Qualificações e Competências</h2>
+    <ul>
+        <li>Amplo conhecimento técnico em construção civil, materiais, instalações elétricas e hidráulicas.</li>
+        <li>Leitura e interpretação de projetos civis e elétricos.</li>
+        <li>Planejamento, orçamentação e acompanhamento de obras.</li>
+        <li>Atendimento técnico, orientação ao cliente e resolução de problemas.</li>
+        <li>Administração, organização de processos e controle de estoque.</li>
+        <li>Elaboração de planilhas e relatórios.</li>
+        <li>Trabalho em equipe, organização, comprometimento e facilidade de aprendizagem.</li>
+    </ul>
+
+    <h2>Informática</h2>
+    <div class="inline-list">
+        <span>Microsoft Excel</span>
+        <span>Microsoft Word</span>
+        <span>LibreOffice</span>
+        <span>AutoCAD</span>
+        <span>Revit</span>
+        <span>Adobe Photoshop</span>
+        <span>CorelDRAW</span>
+        <span>Visual Studio Code</span>
+        <span>HTML</span>
+        <span>Python</span>
+    </div>
+
+    <h2>Informações Complementares</h2>
+    <ul>
+        <li>CREA ativo.</li>
+        <li>CNH categoria B.</li>
+        <li>Disponibilidade para atuar em diferentes setores da empresa.</li>
+        <li>Facilidade com tecnologia e sistemas informatizados.</li>
+        <li>Conhecimento técnico que auxilia na orientação de clientes quanto à escolha e utilização de materiais para construção civil.</li>
+    </ul>
+</body>
+</html>
